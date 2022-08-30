@@ -1,9 +1,11 @@
+# Starting game
 print("Welcome to Mad Lips game\n"
       "     Have fun!!!\n"
       "")
 print("                        THE MAGIC COMPUTERS        ")
 print()
 
+# The questions that the program asks the user
 noun = input("Choose a noun: ")
 plural_noun = input("Choose a plural noun: ")
 verb = input("Choose a verb (presents tense): ")
@@ -13,6 +15,7 @@ adjective = input("Choose a adjective: ")
 second_plural_noun = input("Choose a plural noun: ")
 second_adjective = input("Choose a adjective: ")
 
+# The story based on the users input
 print()
 print(f"Today, every student has a computer small enough to fit into his \n"
       f"\033[91m{noun.upper()}\033[0m. He can solve any math problem by simply \n"
@@ -24,15 +27,20 @@ print(f"Today, every student has a computer small enough to fit into his \n"
       f"and \033[91m{second_adjective.upper()}\033[0m figures.")
 print()
 print("Did you have fun?")
+
+# The user chooses whether to continue
 command = input("Do you want to continue? y/n: ")
 
 if command.lower() == "n":
       print("Bye!")
       exit()
+
+# Starting second game
 else:
       print("                             SNEAKERS           ")
       print()
 
+# The questions that the program asks the user
       adjective = input("Choose a adjective: ")
       invention = input("Choose an invention: ")
       food = input("Choose a food: ")
@@ -42,6 +50,7 @@ else:
       plural_noun = input("Choose a plural noun: ")
       second_plural_noun = input("Choose a plural noun: ")
 
+# The story based on the users input
       print()
       print(f"I would lika to say a few \033[91m{adjective.upper()}\033[0m word about the \n"
             f"most important invention of the twentieth century. I am not \n"
