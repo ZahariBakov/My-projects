@@ -61,3 +61,6 @@ else:
             f"\033[91m{third_adjective.upper()}\033[0m. Sneakers keep me from skidding if the \n"
             f"\033[91m{plural_noun.upper()}\033[0m are slippery, and when I run, they keep me \n"
             f"from stubbing my \033[91m{second_plural_noun.upper()}\033[0m.")
+
+      print("Bye!")
+      exit()
