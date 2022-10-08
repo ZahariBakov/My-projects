@@ -22,8 +22,11 @@ while not winner:
         print("Your move is: rock")
     elif your_move == "p":
         print("Your move is: paper")
-    else:
+    elif your_move == "s":
         print("Your move is: scissors")
+    else:
+        print("Please enter a valid command!")
+        continue
     print()
 
     if your_move == "r":
@@ -44,7 +47,7 @@ while not winner:
         else:
             print(lose)
             computer_win += 1
-    else:
+    elif your_move == "s":
         if computer_move == "scissors":
             print(draw)
         elif computer_move == "paper":
