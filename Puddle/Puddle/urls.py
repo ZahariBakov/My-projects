@@ -3,12 +3,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from Puddle.item import urls
-from Puddle.core.views import index, contact
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('items/', include(urls)),
-    path('contact/', contact, name='contact'),
+    path('', include('Puddle.core.urls')),
+    path('items/', include('Puddle.item.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
