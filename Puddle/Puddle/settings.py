@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Puddle.core',
     'Puddle.item',
+    'Puddle.dashboard',
 ]
 
 MIDDLEWARE = [
