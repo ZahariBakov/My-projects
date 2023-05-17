@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'Puddle.core',
     'Puddle.item',
     'Puddle.dashboard',
+    'Puddle.conversation',
 ]
 
 MIDDLEWARE = [
